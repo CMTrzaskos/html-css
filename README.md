@@ -1,2 +1,2 @@
 # html-css
- Cuso de HTML e CSS do Guanabara
+ Curso de HTML e CSS do Guanabara.
