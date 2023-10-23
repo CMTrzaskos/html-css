@@ -1,6 +1,13 @@
 @charset "UTF-8"
 
-*{
-    margin: 0px;
+header{
     padding: 0px;
+    margin: 0px;
+    background-color: black;
+    color: white;
+    margin: auto;
+}
+body{
+    padding: 0px;
+    margin: 0px;
 }
