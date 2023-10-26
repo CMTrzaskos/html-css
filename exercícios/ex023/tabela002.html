@@ -11,13 +11,29 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: absolute;
+        }
+        caption{
+            border: 1px solid black;
+            font-size: 1.5em;
+            font-weight: bolder;
+            background-color: lightgray;
+            padding: 10px;
+        }
+        thead > tr >th{
+            position: sticky;
+            background-color: #494949;
+            top: -1px;
         }
         td, th{
             border: 1px solid black;
             padding: 8px;
         }
+        tbody > tr:nth-child(2n){
+         background-color: lightgray;   
+        }
         thead, tfoot{
-            background-color: darkgray;
+            background-color: #494949;
             color:white;
         }
         .num{
@@ -28,10 +44,11 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População por Estados</caption>
         <thead>
             <tr>
-                <th>Estados</th>
-                <th>População</th>
+                <th scope="col">Estados</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -145,7 +162,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>População total</th>
+                <th scope="row">População total</th>
                 <td  class="num"><strong>203 062 512</strong></td>
             </tr>
         </tfoot>
