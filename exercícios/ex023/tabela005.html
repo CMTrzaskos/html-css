@@ -4,9 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+        caption{
+            font-size: 1.5em;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        th{
+            
+            font-size: bolder;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        .idade{
+            background-color: yellowgreen;
+        }
+    </style>
 </head>
 <body>
-    <h1>Agrupando Colunas</h1>
-    
+    <table>
+        <colgroup>
+            <col class="nome">
+            <col class="sexo">
+            <col class="idade" span="2">
+            <col class="profissao">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Cléber</td>
+            <td>M</td>
+            <TD>33</TD>
+            <TD>Programador</TD>
+        </tr>
+        <tr>
+            <td>Junior</td>
+            <td>M</td>
+            <td>56</td>
+            <td>Jogador</td>
+        </tr>
+        <tr>
+            <td>Julia</td>
+            <td>F</td>
+            <td>18</td>
+            <td>Dentista</td>
+        </tr>
+        <tr>
+            <td>Vitoria</td>
+            <td>F</td>
+            <td>15</td>
+            <td>Estudante</td>
+        </tr>
+        <tr>
+            <td>Gabriela</td>
+            <td>F</td>
+            <td>19</td>
+            <td>Designer</td>
+        </tr>
+    </table>
 </body>
 </html>
