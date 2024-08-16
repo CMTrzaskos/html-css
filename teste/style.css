@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.checkbox-image {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-image input[type="checkbox"] {
+    margin-right: 10px; /* Espaço entre o checkbox e a imagem */
+}
